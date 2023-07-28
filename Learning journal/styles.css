@@ -1,0 +1,265 @@
+:root {
+    --clr-primary: #fff;
+    --clr-secondary: #8B5CF6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    margin: 1em 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    max-width: 40%;
+    height: auto;
+    margin-right: auto;
+}
+
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.nav-items li {
+    list-style-type: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+
+.hero {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(images/journey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+
+
+h1,
+.hero-text {
+    color: var(--clr-primary);
+
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.hero-text {
+    font-size: 0.675em;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    margin: 1em 1em;
+}
+
+.blog {
+    display: grid;
+    margin: 0 1.25em;
+}
+
+.blog-img {
+    width: 100%;
+    margin-top: 2.125em;
+    border-radius: 3px;
+}
+
+.post-date {
+    margin: 0.5em 0;
+    font-size: 0.875em;
+}
+
+.post-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.post-content {
+    color: #505050;
+}
+
+.post-link {
+    margin-top: 0.6em;
+    color: #000;
+    font-weight: 600;
+}
+
+.second {
+    display: none;
+}
+.more {
+    font-weight: 700;
+    margin-top: 2em;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.more:hover {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    width: 100%;
+    background-color: #202020;
+
+}
+
+.fot-txt {
+    text-align: center;
+    padding: 2em;
+
+    color: #ECECEC;
+}
+
+footer p {
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+footer small {
+    font-size: 0.60em;
+}
+
+/* page about me*/
+.avatar {
+    border-radius: 50%;
+    max-width: 30%;
+    margin-top: 2em;
+}
+
+.welcome {
+    color: #000;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+section {
+    margin: 1.6em 1em;
+}
+
+.about-me {
+    color: #151515;
+    font-size: 1em;
+}
+
+.faq-container {
+    margin: 1.5em 1em;
+}
+
+.faq {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.container-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-about {
+    background-color: #FAFAFA;
+}
+
+/*full post site*/
+.post-site {
+    background-color: #FAFAFA;
+}
+
+.post-details {
+    padding: 1em 3em;
+}
+
+.post-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(min-width:600px) {
+    nav {
+        margin: 1.5em 3em;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 45%;
+        left: 2em;
+        max-width: 50%;
+    }
+
+    .hero-text {
+        font-size: 1em;
+    }
+
+    .blog {
+        margin: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.6em;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        margin: 0 3em;
+    }
+
+    .author {
+        margin-left: 3em;
+        width: 60%;
+    }
+
+    .container-about {
+        padding-top: 3em;
+    }
+
+    .faq-container {
+        margin: 5em 10em;
+    }
+}
